@@ -1,2 +1,18 @@
 # Satellite-Derived-Bathymetry
 Implementing a machine learning approach to satellite derived bathymetry using google earth engine
+
+Bathymetry - the underwater terrain of oceans, seas, and lakes - plays a crucial role in understanding coastal erosion, managing marine resources, safe marine navigation, and marine research. Traditionally, this data is collected via ship-borne sonar surveys, which is time-consuming, expensive, and limited in spatial coverage.
+
+However, recent advancements in remote sensing technology now offer a more efficient and cost-effective alternative: satellite-derived bathymetry (SDB). By analyzing the way light interacts with water, we can extract depth information based on reflectance from a satellite image. This method is advantageous thanks to its broader spatial coverage, faster data acquisition, and greater affordability.
+
+The core principle behind SDB is the relationship between water depth and light penetration. As sunlight enters the water column, it is scattered and absorbed, with different wavelengths of light penetrating to varying depths. For example, red is lost near the surface while blue extends further down. Multispectral satellite sensors capture this information, recording the reflected light across various spectral bands. By analyzing the intensity and ratios of these bands, we estimate water depth based on the principle that shallower areas reflect more light than deeper areas.
+
+SDB has some important limitations. Light penetration in water has a maximum depth limit, after which light becomes too weak for reliable measurements. Water clarity plays a crucial role, as turbid or murky waters hinder light penetration and limit the accuracy of depth estimations. Similarly, the type of bottom substrate (e.g., sand, rocks, vegetation) influences light reflection and can affect our results. Despite these limitations, SDB remains a powerful tool for mapping largely unmapped coastal zones.
+
+SDB workflows can be easily implemented in geospatial platforms like Google Earth Engine (GEE). GEE is a cloud-based platform, providing access to a vast catalog of satellite imagery, including those suitable for bathymetric analysis.
+
+SDB has some important limitations. Light penetration in water has a maximum depth limit, after which light becomes too weak for reliable measurements. Water clarity plays a crucial role, as turbid or murky waters hinder light penetration and limit the accuracy of depth estimations. Similarly, the type of bottom substrate (e.g., sand, rocks, vegetation) influences light reflection and can affect our results. Despite these limitations, SDB remains a powerful tool for mapping largely unmapped coastal zones.
+
+SDB workflows can be easily implemented in geospatial platforms like Google Earth Engine (GEE). GEE is a cloud-based platform, providing access to a vast catalog of satellite imagery, including those suitable for bathymetric analysis.
+
+SDB may be especially useful for places like Alaska, which has the most coastline of any US state but is the least mapped in the country. A 2024 analysis found that 63% of Alaska's waters are still unmapped. This is largely due to how remote and difficult to reach most of this extensive coastline is, which makes it extremely difficult to conduct traditional bathymetric surveys. SDB could address some of these glaring mapping needs, as it can provide important coastline change data in hard-to-reach areas.
