@@ -176,7 +176,7 @@ var vivVisParams = {
     bands: ['B2B3'],
     min: -0.81,
     max: -0.04,
-    gamma: 0.75
+    palette: ['ffffd4', 'a1dab4', '41b6c4', '2c7fb8', '253494'] // light yellow(shallower) to dark blue(deepest) feel free to choose any color pallete that makes sense for you
 };
 Map.addLayer(divImg, vivVisParams, 'divImg', false);
 
